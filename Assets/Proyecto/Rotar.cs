@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Rotar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float valorRotar = 10f;
+
+    public void AumentarRotacion()
     {
-        
+        transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y + valorRotar, gameObject.transform.eulerAngles.z);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DisminuirRotacion()
     {
-        
+        transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y - valorRotar, gameObject.transform.eulerAngles.z);
     }
 }

@@ -642,13 +642,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 957430251}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 957430258}
+        m_TargetAssemblyTypeName: Rotar, Assembly-CSharp
+        m_MethodName: AumentarRotacion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotacion
+  m_text: "Rotaci\xF3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1386,13 +1386,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 957430251}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 957430258}
+        m_TargetAssemblyTypeName: Rotar, Assembly-CSharp
+        m_MethodName: DisminuirRotacion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1582,8 +1582,8 @@ GameObject:
   - component: {fileID: 957430255}
   - component: {fileID: 957430254}
   - component: {fileID: 957430253}
-  - component: {fileID: 957430252}
   - component: {fileID: 957430257}
+  - component: {fileID: 957430258}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1591,20 +1591,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &957430252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957430251}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f17310979bb8bc409d7bc10ebea601c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 4
-  objectRotation: {x: 4, y: 5, z: 1}
 --- !u!65 &957430253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1697,6 +1683,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valorEscalar: 0.5
   maxEscala: {x: 3, y: 3, z: 3}
+--- !u!114 &957430258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957430251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e25d5bf616f392438e7a27d5aacc17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valorRotar: 10
 --- !u!1 &1090218640
 GameObject:
   m_ObjectHideFlags: 0
